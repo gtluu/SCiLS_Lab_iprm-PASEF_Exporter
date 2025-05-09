@@ -1,0 +1,30 @@
+usage: iprmpasef_to_mgf [-h] --scils SCILS [--outdir OUTDIR] --feature_list_id
+                        FEATURE_LIST_ID --intensity_column_name
+                        INTENSITY_COLUMN_NAME [--export_single_file]
+                        [--get_precursor_from_isolation_window]
+                        [--relative_intensity_threshold [0-100]]
+
+options:
+  -h, --help            show this help message and exit
+  --scils SCILS         Path to SCiLS .slx file.
+  --outdir OUTDIR       Output directory.
+  --feature_list_id FEATURE_LIST_ID
+                        UUID for the MS1 feature table of interest. If
+                        unknown, please run the "get_feature_lists" command.
+  --intensity_column_name INTENSITY_COLUMN_NAME
+                        Name of the column from the feature table to use
+                        intensity values from. If unknown, please run the
+                        "get_intensity_column_names" command.
+  --export_single_file  If this flag is used, create a single MGF file
+                        containing all MS/MS spectra. Otherwise, create
+                        individual MGF files for each precursor window.
+  --get_precursor_from_isolation_window
+                        If this flag is used, populate the precursor m/z and
+                        1/K0 values from the isolation window that was defined
+                        in the iprm-PASEF timsControl method.
+  --relative_intensity_threshold [0-100]
+                        Fragments below this percentage of the total ion count
+                        (TIC) intensity are filtered and removed from the
+                        final MS/MS spectrum for a given precursor. Example:
+                        relative_intensity_threshold == 1 is equal to 1% of
+                        the TIC as the cutoff. Defaults to 1 (i.e. 1%).
