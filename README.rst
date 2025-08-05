@@ -1,3 +1,6 @@
+SCiLS Lab iprm-PASEF Exporter
+*****************************
+
 About
 =====
 iprm-PASEF Exporter is a simple tool to create MGF and mzML files from iprm-PASEF datasets acquired on the Bruker
