@@ -1,0 +1,13 @@
+*pyc
+/.ipynb_checkpoints
+/.idea
+/shelf/
+/workspace.xml
+/venv
+/prototype
+/depracated
+/data
+/iprm_PASEF_Pipeline.egg-info
+/dist
+/db
+/build
